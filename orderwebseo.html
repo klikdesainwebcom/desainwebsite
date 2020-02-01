@@ -1,0 +1,54 @@
+<style>
+  span.flabel{
+  margin:0px;padding:0px;
+  text-align:left;
+  font-size:12px;
+  font-family:sans-serif;
+  text-align:center;
+  line-height:1.4;
+  color:#222;
+  }
+  input.f_{
+    border:1px solid #777;
+    font-size:14px;
+    color:#676767;
+    padding:5px 12px;
+    border-radius:5px;
+    text-align:center;
+  }
+  #txtNama,#txtPhone,#txtJenisOrder{
+    margin-bottom:5px;
+  }
+  .form_submit{
+    text-align:center;
+  }
+  p{
+    margin:5px 0px;
+    padding:0px;
+  }
+</style>
+<div class="form_submit">
+<p><span class="fLabel">Nama Lengkap</span><br /><input class="f_" type="text" id="txtNama" value="" name="txtNama"/></p>
+<p><span class="fLabel">Nomor WA/Telp</span><br /><input class="f_" type="text" id="txtPhone" value="" name="txtPhone"/></p>
+<p><span class="fLabel">Jenis Order</span><br />
+<select name="txtJenisOrder" id="txtJenisOrder" class="f_">
+<option value="" disabled selected>Pilih Salah Satu</option>
+<option value="Order Web AMP">Order Pembuatan Website AMP</option>
+<option value="Order Web Standard">Order Pembuatan Website Standard</option>
+<option value="Order SEO">Order Optimasi SEO Website</option>
+<option value="Perbaikan Web">Order Perbaikan Website</option>
+<option value="Redesign Web">Order Desain Ulang Website</option>
+<option value="Order Admin Web">Butuh Admin Website</option>
+<option value="Order Maintenance Web">Order Maintenance Website</option>
+<option value="Kursus Desain Web">Daftar Kursus Desain Website</option>
+<option value="Privat SEO">Daftar Privat/Kursus SEO</option>
+<option value="Pembuatan Logo">Order Pembuatan Logo</option>
+</select>
+</p>
+
+<p>
+<input class="f_" type="button" id="btn" value="Submit" onClick="javascript: window.open('https://api.whatsapp.com/send?phone=6288225226922&text=' + 
+'Nama%20Lengkap%20:%20' +  document.getElementById('txtNama').value + ',' + '%0D%0A' + 
+'Nomor%20WhatsApp%20:%20' +  document.getElementById('txtPhone').value  + ',' + '%0D%0A' + 
+'Jenis%20Order%20:%20' + document.getElementById('txtJenisOrder').value);"/>
+</p></div>
