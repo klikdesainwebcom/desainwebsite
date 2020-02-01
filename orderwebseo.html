@@ -11,11 +11,15 @@
   input.f_{
     border:1px solid #777;
     font-size:14px;
-    color:#f1f1f1;
+    color:#444;
     padding:5px 12px;
     border-radius:5px;
     text-align:center;
-    background:#168BE8;
+    background:#fff;
+  }
+  #btn_submit{
+    background:#168BE8; 
+    color:#f1f1f1;    
   }
   #txtNama,#txtPhone,#txtJenisOrder{
     margin-bottom:5px;
@@ -52,7 +56,7 @@
 </p>
 
 <p>
-<input class="f_" type="button" id="btn" value="Submit" onClick="javascript: window.open('https://api.whatsapp.com/send?phone=6288225226922&text=' + 
+<input class="f_" type="button" id="btn_submit" value="Submit" onClick="javascript: window.open('https://api.whatsapp.com/send?phone=6288225226922&text=' + 
 'Nama%20Lengkap%20:%20' +  document.getElementById('txtNama').value + ',' + '%0D%0A' + 
 'Nomor%20WhatsApp%20:%20' +  document.getElementById('txtPhone').value  + ',' + '%0D%0A' + 
 'Jenis%20Order%20:%20' + document.getElementById('txtJenisOrder').value);"/>
