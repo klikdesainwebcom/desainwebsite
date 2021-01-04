@@ -1,0 +1,42 @@
+<style>
+span.flabel{margin:0px;padding:0px;text-align:left;font-size:12px;font-family:sans-serif;text-align:center;line-height:1.4;color:#222;}
+input.f_{border:1px solid #777;font-size:14px;color:#676767;padding:5px 12px;border-radius:5px;text-align:center;}
+#txtNama,#txtPhone,#txtLayanan,#txtCMS,#txtKeterangan,#txtCityProp{margin-bottom:5px;}
+.form_submit{text-align:center;max-width:100%;min-width:0;width:375px;margin:0 auto;padding:15px;}
+p{margin:5px 0px;padding:0px;}
+input#btn_order{-webkit-box-shadow: 0 1px 6px 0 rgba(0,0,0,.3);box-shadow: 0 1px 6px 0 rgba(0,0,0,.3);border-radius:4px;font-size:18px;color:#f7f7f7;background:#F55253;margin:0px auto;padding:10px 17px;}input#btn_order:hover{text-decoration:none;background:#444;color:#fff;-webkit-box-shadow:none;box-shadow:none;border-bottom:1px inset #eee;border-right:1px outset #eee;}
+</style>
+<div class="form_submit">
+<p><span class="fLabel">Nama Lengkap*</span><br /><input class="f_" type="text" id="txtNama" value="" name="txtNama"/></p>
+<p><span class="fLabel">Nomor WA (WhatsApp)</span><span class="fLabel">*</span><br />
+  <input class="f_" type="text" id="txtPhone" value="" name="txtPhone"/></p>
+<p> Layanan Web<span class="fLabel">*</span><br />
+<select name="txtLayanan" id="txtLayanan" class="f_">
+<option value="" disabled selected>Pilih order ...</option>
+<option value="desain_blogspot">Desain Web Blogspot</option>
+<option value="desain_wp">Desain Web Wordpress</option>
+<option value="bikinweb_wp">Pembuatan Web Wordpress</option>
+<option value="bikinweb_blogspot">Pembuatan Web Blogspot</option>
+<option value="bikinweb_custom">Pembuatan Web Custom</option>
+<option value="bikinweb_app">Pembuatan Web App</option>
+</select>
+<p><span class="fLabel"> CMS</span> Website<span class="fLabel">*</span><br />
+<select name="txtCMS" id="txtCMS" class="f_">
+<option value="" disabled selected>Pilih CMS ...</option>
+<option value="cms_blogspot">CMS Blogspot</option>
+<option value="cms_wordpress">CMS Wordpress</option>
+<option value="cms_webcustom_app">CMS Khusus</option>
+</select>
+<p><span class="fLabel">Keterangan*</span><br />
+  <input class="f_" type="text" id="txtKeterangan" value="" name="txtKeterangan"/></p>
+<p><span class="fLabel">Propinsi/Kota</span><span class="fLabel">*</span><br />
+  <input class="f_" type="text" id="txtCityProp" value="" name="txtCityProp"/></p>
+<p>
+<input class="f_ btn_order" type="button" id="btn_order" value="Submit" onClick="javascript: window.open('https://api.whatsapp.com/send?phone=6289526375787&text=' + 
+'Nama%20Lengkap%20:%20' +  document.getElementById('txtNama').value + ',' + '%0D%0A' + 
+'WhatsApp%20:%20' +  document.getElementById('txtPhone').value  + ',' + '%0D%0A' + 
+'Jenis%20Order%20:%20' + document.getElementById('txtLayanan').value  + ',' +  '%0D%0A' + 
+'CMS%20Pilihan%20:%20' +  document.getElementById('txtCMS').value  + ',' + '%0D%0A' + 
+'Pesan%20:%20' + document.getElementById('txtKeterangan').value + ',' + '%0D%0A' + 
+'Propinsi/Kota%20:%20' + document.getElementById('txtCityProp').value);"/>
+</p></div>
